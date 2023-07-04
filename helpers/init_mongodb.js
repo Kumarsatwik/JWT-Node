@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://litkumarsatwik2017:2aSNkAUMAuNRq7Rp@cluster0.wgskbgm.mongodb.net",
+    process.env.MONGODB_URL,
     {
       dbName: process.env.DB_NAME,
       useNewUrlParser: true,
