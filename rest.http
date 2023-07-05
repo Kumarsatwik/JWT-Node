@@ -1,19 +1,37 @@
 GET http://localhost:4000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg1NjI0NzUsImV4cCI6MTY4ODU2MjQ5MCwiYXVkIjoiNjRhNTAwYzUwZGVhOTdjNjZlYjJlNTA3IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.em2zNKcy4RC1vjIXe7OmgioYEUTXDIX1BOX8HxnfhXM
 
 ### Login Route
 POST http://localhost:4000/auth/login
+Content-Type: application/json
+
+{
+    "email":"test@gmail.com",
+    "password":"test"
+}
 
 ### register Route
 POST http://localhost:4000/auth/register
 Content-Type: application/json
 
 {
-    "email":"TEST@gmail.com",
+    "email":"test13@gmail.com",
     "password":"test"
 }
 
 ### Logout Route
 DELETE  http://localhost:4000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg1NjE1OTYsImV4cCI6MTcyMDExOTE5NiwiYXVkIjoiNjRhNTAwYzUwZGVhOTdjNjZlYjJlNTA3IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.JEYvljKV1-HWvXKpgZx7cKmxej6DTR-_hQ17JpW90qk"
+}
+
 
 ### refresh token Route
-POST http://localhost:4000/auth/refresh-token
+POST http://localhost:4000/auth/refresh-token 
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg1NTc5MzIsImV4cCI6MTY4ODU1Nzk0NywiYXVkIjoiNjRhNTAwYzUwZGVhOTdjNjZlYjJlNTA3IiwiaXNzIjoicGlja3VycGFnZS5jb20ifQ.zm6k192U5A_5NupssDl0C1Yg6DXPR0bl1a0Ux6Gjp_0"
+}
