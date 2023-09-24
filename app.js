@@ -5,7 +5,7 @@ require("dotenv").config();
 require("./helpers/init_mongodb");
 require("./helpers/init_redis");
 const { verifyAccessToken } = require("./helpers/jwt_helper");
-
+const mongoose = require('mongoose')
 
 const authRoute = require("./Routes/Auth.route");
 
