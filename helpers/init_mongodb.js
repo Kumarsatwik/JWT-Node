@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+// mogoose connection
 mongoose
   .connect(
     process.env.MONGODB_URL,
