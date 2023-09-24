@@ -7,14 +7,6 @@ require("./helpers/init_redis");
 const { verifyAccessToken } = require("./helpers/jwt_helper");
 
 
-// client.SET("foo", "bar");
-// client.GET("foo", (err, value) => {
-//   if (err) console.error(err.message);
-//   console.log(value);
-// });
-
-
-
 const authRoute = require("./Routes/Auth.route");
 
 const app = express();
