@@ -19,7 +19,7 @@ mongoose.connection.on("connected", () => {
 });
 
 mongoose.connection.on("error", (err) => {
-  console.log(err.message);
+  console.log("error ",err.message);
 });
 
 mongoose.connection.on("disconnected", () => {
